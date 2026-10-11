@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+
+/* Stats */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-box {
+    background: #1e293b;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #334155;
+}
+
+.stat-box span {
+    display: block;
+    color: #94a3b8;
+    margin-bottom: 8px;
+}
+
+.stat-box strong {
+    font-size: 24px;
+}
+
+
+/* Game Card */
+
+.game-card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #334155;
+    margin-bottom: 30px;
+}
+
+.level-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #cbd5e1;
+}
+
+#difficulty {
+    background: #334155;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+
+/* Progress */
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #0f172a;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+#progressBar {
+    height: 100%;
+    width: 1%;
+    background: #22c55e;
+    transition: width 0.3s;
+}
+
+
+/* Question */
+
+#question {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.input-box {
+    background: #0f172a;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: 1px solid #334155;
+}
+
+.input-box strong {
+    color: #22c55e;
+}
+
+.input-box pre {
+    margin-top: 10px;
+    white-space: pre-wrap;
+    color: #cbd5e1;
+}
+
+
+/* Options */
+
+.game-card h3 {
+    margin-bottom: 15px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.option {
+    background: #334155;
+    color: white;
+    border: 2px solid transparent;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.option:hover {
+    border-color: #22c55e;
+    transform: translateY(-2px);
+}
+
+.option.selected {
+    border-color: #22c55e;
+    background: #166534;
+}
+
+
+/* Buttons */
+
+button {
+    font-family: inherit;
+}
+
+.check-btn,
+.next-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.check-btn {
+    background: #22c55e;
+    color: #052e16;
+}
+
+.check-btn:hover {
+    background: #16a34a;
+}
+
+.next-btn {
+    background: #3b82f6;
+    color: white;
+    margin-top: 15px;
+}
+
+.next-btn:hover {
+    background: #2563eb;
+}
+
+
+/* Result */
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #0f172a;
+}
+
+.result p {
+    margin-top: 10px;
+    color: #cbd5e1;
+}
+
+.result strong {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Level Map */
+
+.level-map {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid #334155;
+}
+
+.level-map h2 {
+    margin-bottom: 20px;
+}
+
+#levels {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 8px;
+}
+
+.level {
+    padding: 10px 5px;
+    text-align: center;
+    background: #334155;
+    border-radius: 8px;
+    color: #cbd5e1;
+}
+
+.level.active {
+    background: #22c55e;
+    color: #052e16;
+    font-weight: bold;
+}
+
+.level.completed {
+    background: #166534;
+    color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .game-card {
+        padding: 20px;
+    }
+
+    .options {
+        grid-template-columns: 1fr;
+    }
+
+    #levels {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    #question {
+        font-size: 20px;
+    }
+}

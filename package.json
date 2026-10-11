@@ -1,0 +1,9 @@
+{
+  "name": "dsa-quest",
+  "version": "1.0.0",
+  "description": "100 Level DSA Quiz Game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

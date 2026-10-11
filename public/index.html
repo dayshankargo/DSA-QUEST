@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DSA Quest</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>⚔️ DSA QUEST</h1>
+            <p>100 Levels • Master Data Structures & Algorithms</p>
+        </header>
+
+
+        <section class="stats">
+
+            <div class="stat-box">
+                <span>🏆 Score</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div class="stat-box">
+                <span>🔥 Streak</span>
+                <strong id="streak">0</strong>
+            </div>
+
+            <div class="stat-box">
+                <span>🎯 Level</span>
+                <strong id="level">1</strong>
+            </div>
+
+        </section>
+
+
+        <section class="game-card">
+
+            <div class="level-info">
+                <span id="difficulty">Easy</span>
+                <span>Level <span id="currentLevel">1</span>/100</span>
+            </div>
+
+
+            <div class="progress-container">
+                <div id="progressBar"></div>
+            </div>
+
+
+            <h2 id="question">
+                Loading question...
+            </h2>
+
+
+            <div class="input-box">
+                <strong>Input:</strong>
+
+                <pre id="input"></pre>
+            </div>
+
+
+            <h3>Choose your answer:</h3>
+
+            <div id="options" class="options">
+                <!-- Options will appear here -->
+            </div>
+
+
+            <button id="checkBtn" class="check-btn">
+                Check Answer
+            </button>
+
+
+            <div id="result" class="result hidden">
+
+                <h3 id="resultTitle"></h3>
+
+                <p>
+                    Your Answer:
+                    <strong id="userAnswer"></strong>
+                </p>
+
+                <p>
+                    Correct Answer:
+                    <strong id="correctAnswer"></strong>
+                </p>
+
+            </div>
+
+
+            <button id="nextBtn" class="next-btn hidden">
+                Next Level →
+            </button>
+
+        </section>
+
+
+        <section class="level-map">
+
+            <h2>🗺️ Level Map</h2>
+
+            <div id="levels">
+                <!-- Levels will appear here -->
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
